@@ -1,0 +1,27 @@
+<ion-content>
+  <div id="container">
+    <img src="/src/assets/images/téléchargement.jpeg" />
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>
+          Appareil
+        </ion-card-subtitle>
+        <ion-card-title>{{ appareil.nom }}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>
+          {{ appareil.id }} <br>
+          {{ appareil.statue }} <br>
+          {{ appareil.dateAdd }} 
+        </p>
+        <p>
+          <ion-button (click)="onRetour()">
+            <ion-icon name="caret-back-sharp"></ion-icon>
+            Retour
+          </ion-button>
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

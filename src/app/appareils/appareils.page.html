@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>appareils</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let appareil of appareils" [routerLink]="['./',appareil.id]">
+    <ion-icon slot="start" name="flash-outline"></ion-icon>
+    <ion-label>{{ appareil.nom }}</ion-label>
+    <ion-label>{{ appareil.statue }}</ion-label>
+  </ion-item>
+</ion-content>
